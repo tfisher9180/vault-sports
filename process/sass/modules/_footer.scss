@@ -1,0 +1,22 @@
+.footer {
+  background-color: shade($color-main, 80%);
+  @include background-image('../images/backgrounds/footer.jpeg', 800px, transparent, shade($color-main, 80%));
+  color: $color-background;
+  padding: 0 0 5em 0;
+  line-height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+
+  .nav {
+    margin-top: 0;
+  }
+
+  .legal {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 110%;
+    margin-top: 3rem;
+  }
+}

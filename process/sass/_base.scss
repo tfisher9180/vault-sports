@@ -24,3 +24,18 @@ body {
   max-width: $container-max-width;
   margin: 0 auto;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: $color-main;
+  font-weight: $font-weight-heavy;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}

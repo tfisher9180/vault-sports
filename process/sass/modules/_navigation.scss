@@ -1,0 +1,53 @@
+.nav {
+  margin-top: 1.75em;
+
+  .nav-elements {
+    display: flex;
+    flex-direction: column;
+
+    .branding {
+      max-width: 180px;
+      display: block;
+      margin: 0 auto;
+
+      @media screen and (min-width: $small) {
+        width: 30%;
+      }
+    }
+
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: flex-end;
+      align-content: flex-start;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+      line-height: 150%;
+      list-style-type: none;
+
+      a {
+        font-weight: $font-weight-bold;
+        text-decoration: none;
+        padding: 0 1rem;
+
+        &:hover {
+          color: $color-main;
+        }
+      }
+
+      @media screen and (min-width: $small) {
+        flex-direction: row;
+      }
+    }
+
+    a {
+      color: $color-background;
+    }
+
+    @media screen and (min-width: $small) {
+      flex-direction: row;
+    }
+  }
+}

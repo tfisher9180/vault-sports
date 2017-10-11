@@ -1,0 +1,61 @@
+$color-background-team: shade($color-main, 5%);
+$item-width: 100%;
+
+#team {
+  background-color: $color-background-team;
+
+  .image-header {
+    @include background-image('../images/backgrounds/team.jpg', 40vh, transparent, $color-background-team, center center);
+  }
+
+  .headline {
+    color: $color-background;
+  }
+
+  .team-cards {
+
+    .card {
+      background: rgba($color-background, 0.2);
+      box-shadow: 5px 5px 3px rgba($color-main, 0.5);
+      border-radius: 20px;
+      margin-bottom: 3rem;
+
+      .card-info {
+        padding: 3% 7%;
+
+        .card-name {
+          font-size: 2rem;
+          line-height: 110%;
+          color: $color-background;
+        }
+
+        .card-title {
+          font-size: 1.4rem;
+          line-height: 100%;
+        }
+      }
+
+      .card-text {
+        font-size: 1.6rem;
+        font-weight: $font-weight-normal;
+        line-height: 130%;
+        margin: 0;
+        padding: 7%;
+      }
+
+      @media screen and (min-width: $small) {
+        width: calc(#{$item-width}/2 - 1.5rem);
+      }
+
+      @media screen and (min-width: $large) {
+        width: calc(#{$item-width}/3 - 1.5rem);
+      }
+    }
+
+    @media screen and (min-width: $small) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}

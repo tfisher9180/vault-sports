@@ -1,0 +1,11 @@
+$color-background-guarantee: shade($color-main, 25%);
+
+#guarantee {
+  color: $color-background;
+  font-size: 2rem;
+  background-color: $color-background-guarantee;
+
+  .image-header {
+    @include background-image('../images/backgrounds/guarantee.jpg', 60vh, transparent, $color-background-guarantee, bottom center);
+  }
+}

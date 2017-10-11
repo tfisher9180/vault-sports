@@ -1,0 +1,12 @@
+#about {
+  background-color: $color-main;
+  color: $color-background;
+
+  p {
+    color: rgba($color-background, 0.8);
+  }
+
+  @media screen and (min-width: $large) {
+    min-height: 100vh;
+  }
+}

@@ -6,15 +6,16 @@ $font-weight-bold: 600;
 $font-weight-heavy: 700;
 
 // Colors
-$color-main: #e60d2d;
+$color-main: #CF4647;
+$color-secondary: #3A3E64;
 $color-alt: #000;
 $color-background: #fff;
 $color-text: #000;
 
 // Media queries
-$small: screen and (min-width: 600px);
-$medium: screen and (min-width: 900px);
-$large: screen and (min-width: 1200px);
+$small: 600px;
+$medium: 900px;
+$large: 1200px;
 
 // Global
 $container-width: 80%;

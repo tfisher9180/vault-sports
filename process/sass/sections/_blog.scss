@@ -1,0 +1,13 @@
+#blog {
+  @include background-image('../images/backgrounds/blog.jpg', 60vh);
+  color: $color-background;
+  text-align: center;
+
+  .text-content {
+    display: block;
+    border: 5px solid $color-background;
+    padding: 0.5em;
+    color: $color-background;
+    text-decoration: none;
+  }
+}

@@ -1,3 +1,14 @@
 @import "../../src/normalize/normalize/import-now";
 @import "variables";
+@import "mixins";
+@import "functions";
 @import "base";
+@import "modules/header";
+@import "modules/navigation";
+@import "modules/footer";
+@import "modules/section";
+@import "sections/about";
+@import "sections/blog";
+@import "sections/products";
+@import "sections/guarantee";
+@import "sections/team";

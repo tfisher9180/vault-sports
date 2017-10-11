@@ -1,0 +1,55 @@
+$item-width: 100%;
+
+#products {
+
+  .headline {
+    color: $color-main;
+  }
+
+  .product-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+
+    .product-item {
+      position: relative;
+      color: $color-background;
+      overflow: hidden;
+      width: calc(#{$item-width}/2);
+
+      &:hover,
+      &:focus {
+
+        .product-name {
+          display: block;
+        }
+      }
+
+      .product-name {
+        background: $color-main;
+        color: $color-background;
+        font-weight: $font-weight-heavy;
+        font-size: 80%;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: none;
+      }
+
+      @media screen and (min-width: $small) {
+        width: calc(#{$item-width}/3);
+      }
+
+      @media screen and (min-width: $medium) {
+        width: calc(#{$item-width}/4);
+      }
+
+      @media screen and (min-width: $large) {
+        width: calc($item-width/6);
+      }
+    }
+  }
+}
